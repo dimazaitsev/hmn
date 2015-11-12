@@ -1,7 +1,7 @@
 ﻿# hm, hn, hmn
 
 Generators of canvas for Petri net models of hypertorus (hypercube) grid with 
-Moore's, von-Neumann's, and combined neighborhoods, respectively
+Moore's, von-Neumann's, and generalized neighborhoods, respectively
 
 
 Description:
@@ -29,11 +29,10 @@ Neighbors are connected via facets which are (d-1)-dimension hypercubes.
 For a hypertorus cell, there are 2*d neighbors. For a hypercube cell
 situated on k-cube bound which is not (k-1)-cube bound, there are d+k neighbors.
 
-hmn - combined neighborhood
+hmn - generalized neighborhood
 
-In a combined neighborhood (Moore's with von-Neumann's), neighbors are situated at 
-Chebyshev distance equal to 1 restricted by a given interval of Manhattan distance r, 
-1<=r1<=r<=r2<=d.
+In generalized neighborhood, neighbors are situated at Chebyshev distance equal to 1
+restricted by a given interval of Manhattan distance r, 1<=r1<=r<=r2<=d.
 Neighbors are connected via facets which are hypercubes having dimensions from d-r1 to d-r2.
 Thus, r1=1, r2=1 gives von-Neumann's neighborhood and r1=1, r2=d gives Moore's neighborhood.
 
